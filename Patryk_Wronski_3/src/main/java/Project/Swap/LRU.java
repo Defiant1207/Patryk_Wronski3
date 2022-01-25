@@ -28,6 +28,7 @@ public class LRU extends ASwap{
                 frames[processes_list.get(at[1]).getPage()]=at[1];
             }
             at[1]++;
+            wyswietl(processes);
         }
     }
     @Override
@@ -61,6 +62,7 @@ public class LRU extends ASwap{
                 }
             }
             at[1]++;
+            wyswietl(processes);
         }
     }
 

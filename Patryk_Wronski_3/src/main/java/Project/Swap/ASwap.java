@@ -11,16 +11,11 @@ public abstract class ASwap implements ISwap {
 
     List<IProcess> processes_list;
 
-
-
     public ASwap(List<IProcess> processes_list) {
 
         this.processes_list = processes_list;
 
     }
-
-
-
 
     @Override
     public void addFirst(int x, int[] at, List<IProcess> processes) {
@@ -36,7 +31,17 @@ public abstract class ASwap implements ISwap {
                 at[0]++;
             }
             at[1]++;
+            wyswietl(processes);
         }
+    }
+    @Override
+    public void wyswietl(List<IProcess> processes){
+        System.out.print("| ");
+        for(int i=0; i<processes.size(); i++){
+            System.out.print(processes.get(i).getPage() + " ");
+        }
+        System.out.print("|");
+        System.out.println();
     }
 
     public void addFIFO(int x, int[] at, List<IProcess> processes)

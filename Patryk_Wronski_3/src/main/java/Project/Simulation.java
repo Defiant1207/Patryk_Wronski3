@@ -8,6 +8,8 @@ import Project.Swap.LFU;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PipedInputStream;
+import java.io.PrintWriter;
 import java.util.*;
 
 public class Simulation {

@@ -42,6 +42,7 @@ public class OPT extends ASwap {
                 }
             }
             at[1]++;
+            wyswietl(processes);
         }
     }
 
@@ -63,6 +64,9 @@ public class OPT extends ASwap {
 
             for(int i=0; i<x; i++){
                 for(int j=at[1]; j<processes_list.size();j++){
+                    if(processes.get(i).getPage()!=processes_list.get(j).getPage()){
+                        frames[processes.get(i).getPage()]=20;
+                    }
                     if(processes.get(i).getPage()==processes_list.get(j).getPage()){
                         frames[processes.get(i).getPage()]=j;
                         break;
@@ -71,25 +75,6 @@ public class OPT extends ASwap {
             }
 
         }
-     /*   Map<Integer, Integer> currentFrame = new LinkedHashMap<>();
-        int x = 0;
-        for (int i = 0; i < processes.size(); i++) {
-            for (int j = at[1]; j < processes_list.size(); j++) {
-                if (processes.get(i).getPage() == processes_list.get(j).getPage()) {
-                    currentFrame.put(i, j);
-                    break;
-                }
-            }
-        }
-        for (int i = 0; i < processes.size(); i++) {
-            if (currentFrame.get(i + 1) != null) {
-                if (currentFrame.get(i + 1) > x) {
-                    x = i + 1;
-                }
-            }
-        }
-            return x;
-            */
 
         }
 

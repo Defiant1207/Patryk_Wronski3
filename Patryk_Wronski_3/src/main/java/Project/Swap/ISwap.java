@@ -7,4 +7,6 @@ import java.util.List;
 public interface ISwap {
 
     void addFirst(int x, int[] at, List<IProcess> processes);
+
+    void wyswietl(List<IProcess> processes);
 }

@@ -77,6 +77,7 @@ public class LFU extends ASwap {
             }
             procesUsed(processes_list.get(t).getPage());
             t++;
+            wyswietl(processes);
         }
 
         for (int i = t; i < processes_list.size(); i++) {
@@ -96,6 +97,7 @@ public class LFU extends ASwap {
                 }
 
             }
+            wyswietl(processes);
         }
         return a;
     }

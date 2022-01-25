@@ -17,7 +17,7 @@ import java.util.Scanner;
 public abstract class AKreator implements IKreator {
 
     Scanner scanner;
-    int page[] = new int[233];
+    int page[] = new int[20];
     int x;
     List<IProcess> procesy;
 
@@ -30,7 +30,7 @@ public abstract class AKreator implements IKreator {
     @Override
     public void load() {
         while (scanner.hasNext()) {
-            for (int j = 0; j < 233; j++) {
+            for (int j = 0; j < 20; j++) {
                 page[j] = scanner.nextInt();
                 IProcess proces = new Process(page[j]);
                 procesy.add(proces);

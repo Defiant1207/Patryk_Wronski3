@@ -46,6 +46,7 @@ public class FIFO extends ASwap {
                     processes.add(processes_list.get(i));
                 }
             }
+wyswietl(processes);
         }
     }
 }
