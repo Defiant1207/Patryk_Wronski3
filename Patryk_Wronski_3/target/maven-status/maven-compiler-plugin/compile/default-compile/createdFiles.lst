@@ -1,0 +1,13 @@
+Project\Swap\LFU.class
+Project\Process\AProcess.class
+Project\Swap\OPT.class
+Project\Kreator\AKreator.class
+Project\Swap\ISwap.class
+Project\Kreator\Kreator.class
+Project\Kreator\IKreator.class
+Project\Swap\FIFO.class
+Project\Process\IProcess.class
+Project\Process\Process.class
+Project\Simulation.class
+Project\Swap\ASwap.class
+Project\Swap\LRU.class
